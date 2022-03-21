@@ -1,0 +1,35 @@
+{
+  "name": "Facepunch Theme",
+  "component": false,
+  "license_url": null,
+  "about_url": null,
+  "authors": null,
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+    "bg": "assets/bg.jpg",
+    "bg_dark": "assets/bg_dark.webp",
+    "bg_cat_orange": "assets/categories/orange.webp",
+    "bg_cat_blue": "assets/categories/blue.webp",
+    "bg_cat_red": "assets/categories/red.webp",
+    "bg_cat_brown": "assets/categories/brown.webp",
+    "bg_cat_green": "assets/categories/green.webp"
+  },
+  "color_schemes": {
+    "Facepunch_Default": {
+      "primary": "171727",
+      "secondary": "ffffff",
+      "tertiary": "171727",
+      "quaternary": "171727",
+      "header_background": "171727",
+      "header_primary": "ffffff",
+      "highlight": "CD412B",
+      "danger": "CD412B",
+      "success": "03a9f4",
+      "love": "e417c4"
+    }
+  },
+  "modifiers": {},
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}

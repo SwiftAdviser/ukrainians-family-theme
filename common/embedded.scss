@@ -1,0 +1,39 @@
+body {
+  padding: 1rem;
+}
+
+html.sbox {
+  background-color: #317ab3;
+  color: #fff;
+  font-size: 13px;
+
+  --tertiary: #2b628c;
+  --primary-medium: #fff;
+  --primary-low: #4894d0;
+  --primary-low-mid: #7cc4ff;
+
+  a {
+    color: var(--primary-low-mid);
+  }
+
+  .button {
+    color: var(--tertiary);
+    background-color: white;
+    padding: 5px 10px;
+  }
+
+  .post-replies {
+    font-size: 10px;
+    padding: 2px 8px;
+    background-color: var(--tertiary);
+    color: var(--primary-low-mid);
+  }
+
+  .username a {
+    color: #fff;
+
+    &.staff {
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+$darkblue: #171928;
+$lightblue: #888cb1;
+$brightblue: #03a9f4;
+$fpred: #ec1c24;
+$offwhite: #f7f7ff;
+$lightestblue: #f3f4ff;
+$lightestblue-hover: darken($lightestblue, 2%);
+
+$rust: #ce422b;
+$gmod: #1194f0;
+$sandbox: #ed207b;
+
+$radius: 8px;
+$radius-half: 4px;
+
+$padding: 2rem;
+$padding-small: 1rem;
+$padding-medium: 3rem;
+$padding-large: 4rem;
+
+// Responsive breakpoints
+$gap: 32px !default;
+$tablet: 769px !default;
+$desktop: 960px + (2 * $gap) !default;
+$widescreen: 1152px + (2 * $gap) !default;
+$widescreen-enabled: true !default;
+$fullhd: 1344px + (2 * $gap) !default;
+$fullhd-enabled: true !default;
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+:root {
+  --font-family: "Roboto", Helvetica, Arial, sans-serif;
+  --heading-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  --success: #03a9f4;
+  --highlight-medium: #1194f033;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+}

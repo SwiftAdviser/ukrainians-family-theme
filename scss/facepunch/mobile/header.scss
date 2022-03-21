@@ -1,0 +1,31 @@
+header.d-header {
+  //   background-color: var(--primary);
+}
+
+// List Controls Nav
+.list-controls {
+  background-color: rgba($darkblue, 0.7);
+  margin: 0;
+
+  .navigation-container {
+    margin: 0;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-pills {
+    margin: 0;
+
+
+    .navigation-toggle {
+      background-color: var(--secondary);
+      margin-bottom: 0;
+    }
+  }
+
+  .container {
+    button#create-topic {
+      margin: 0;
+    }
+  }
+}

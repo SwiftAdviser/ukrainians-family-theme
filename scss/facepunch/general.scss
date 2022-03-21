@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+html,
+body 
+{
+  margin: 100;
+  padding: 0;
+}
+
+body 
+{
+  background-image: url($bg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+
+  &:before {
+    content: " ";
+    background: linear-gradient(
+      45deg,
+      rgba(#1d609e, 0.4) 20%,
+      rgba(#1d609e, 0.2) 60%,
+      rgba(#1d609e, 0.1) 100%
+    );
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #main-outlet 
+  {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 925px) {
+  .wrap,
+  body #main-outlet {
+    max-width: 900px;
+  }
+}
+
+a {
+  color: var(--success);
+}
+
+a:visited {
+  color: var(--success-hover);
+}
+
+a:hover {
+  color: var(--success);
+}
+
+// Disable horrible highlight fade out
+.highlighted {
+  animation: background-fade-highlight 0s !important;
+}
+
+// Don't show the "this is their first post" thing
+.post-notice.new-user {
+  display: none;
+}
+
+
+.suggested-topics-message, .topic-list-bottom, .page-not-found-topics, .page-not-found, .page-not-found-search {
+  background: #fff;
+  padding: 10pt;
+  border-radius: 5pt;
+}
+
+.suggested-topics-title {
+  color: var(--blend-primary-secondary-5);
+}
+
+
+.select-kit.dropdown-select-box.period-chooser .period-chooser-header {
+  color: var(--blend-primary-secondary-5);
+  background: #fff !important;
+  margin-bottom: 10pt;
+  padding: 2pt 5pt 0 !important;
+  border-radius: 5pt;
+}
+
+#topic-footer-buttons .pinned-button .reason, #topic-footer-buttons .topic-notifications-button .reason {
+  color: var(--primary-low-mid);
+}
+
+.btn-primary {
+  background: var(--success);
+}
+
+.btn-primary:hover {
+  background: var(--success-hover);
+}
+
+.user-content-wrapper, .user-main {
+  background: #fff;
+  padding: 20pt;
+  border-radius: 10pt;
+}
+.user-summary-page .user-main .about .details {
+  box-shadow: none;
+  border: 0;
+}
+
+.user-summary-page .user-main .user-content-wrapper {
+  box-shadow: none;
+}

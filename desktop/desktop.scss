@@ -1,0 +1,151 @@
+// Default variables
+@import "facepunch/variables";
+
+// General Styles (Body etc)
+@import "facepunch/general";
+@import "facepunch/form";
+@import "facepunch/header";
+@import "facepunch/footer";
+
+// Views
+@import "facepunch/badges"; // Search duh
+@import "facepunch/categories"; // Main Homepage View
+@import "facepunch/category"; // Individual Category View
+@import "facepunch/forum"; // Forum View
+@import "facepunch/post"; // Individual Post View
+@import "facepunch/profile"; // User Profile
+@import "facepunch/search"; // Search duh
+
+@media screen and (min-width: 925px) {
+  .archetype-regular {
+    #topic-footer-buttons {
+      #topic-footer-button-share-and-invite,
+      .topic-notifications-button {
+        display: none;
+      }
+
+      .topic-footer-main-buttons {
+        justify-content: center;
+      }
+    }
+
+    .title-voting {
+      float: right;
+    }
+
+    .topic-avatar,
+    .topic-body {
+      border-top: 0;
+      padding-top: 2rem;
+    }
+
+    .container.posts {
+      position: relative;
+      display: block;
+    }
+
+    .container.posts .topic-navigation {
+      > div {
+        position: absolute;
+        right: -135px;
+      }
+    }
+
+    .topic-post {
+      border-left: 0;
+
+      .row {
+        display: flex;
+
+        .topic-avatar,
+        .topic-body {
+          float: none;
+          //   width: auto;
+        }
+
+        .topic-body {
+          flex-grow: 1;
+        }
+      }
+
+      .actions {
+        opacity: 0.5;
+      }
+
+      &:hover {
+        .actions {
+          opacity: 1;
+        }
+      }
+    }
+
+    #main-outlet {
+      max-width: 760px;
+      position: relative;
+      left: -45px;
+    }
+  }
+
+  .topic-navigation {
+    color: #fff;
+    --primary-med-or-secondary-med: #fff;
+    --tertiary-low-or-tertiary-high: #fff;
+    text-shadow: 0px 0px 20px black;
+  }
+}
+
+.categories-and-latest {
+  .category-heading {
+    display: none;
+  }
+
+  .latest-topic-list {
+    .title {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding: 0 !important;
+      display: inline-block !important;
+      max-width: 100%;
+    }
+  }
+}
+
+.admin-main-nav .nav-pills, .nav-pills.user-nav {
+
+  font-size: 0.8rem;
+  background: #ebebeb;
+  border-radius: 5pt;
+}
+
+.badge-card .badge-contents .badge-icon svg {
+  font-size: 42px;
+}
+
+.badge-card .badge-contents .badge-icon {
+  margin-right: 0.5em;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+}
+.badge-card .badge-contents {
+  display: flex;
+  min-height: 8em;
+  padding: 0 1.5em;
+}
+
+@media screen and (min-width: 900px) {
+  .badge-card .badge-contents .badge-info h3 {
+    font-size: var(--font-up-1);
+  }
+
+}
+
+.group-members {
+  margin: 10pt;
+  width: 90% !important;
+}
+
+.group-members thead {
+  font-size: 9pt;
+}

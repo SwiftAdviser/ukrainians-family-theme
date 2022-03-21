@@ -1,0 +1,99 @@
+<script type="text/x-handlebars" data-template-name="components/parent-category-row">
+{{#unless isHidden}}
+  {{plugin-outlet name="category-list-above-each-category" connectorTagName="" tagName="" args=(hash category=category)}}
+  
+    <div class="category {{if isMuted "muted"}} {{if noCategoryStyle "no-category-style"}} {{if category.description_excerpt "has-description" "no-description"}} {{if category.uploaded_logo.url "has-logo" "no-logo"}}" data-category-id={{category.id}} data-notification-level={{category.notificationLevelString}}>
+  
+        <div class="category-head">
+        
+            <a class="category-logo" href={{category.url}}>
+            {{#if category.uploaded_logo.url}}
+                {{cdn-img src=category.uploaded_logo.url}}
+            {{/if}}
+            </a>
+            
+            <a class="category-title-link" href={{category.url}}>
+
+                {{category-title-before category=category}}
+                {{#if category.read_restricted}}
+                {{d-icon lockIcon}}
+                {{/if}}
+                <span class="category-name">{{dir-span category.name}}</span>
+                
+                <span class="category-description">
+                {{dir-span category.description_excerpt}}
+                </span>
+
+            </a>
+
+            <div class="stats">
+              <div title={{category.statTitle}}>{{html-safe category.stat}}</div>
+              {{category-unread category=category tagName="div" class="unread-new"}}
+            </div>
+                
+        
+        </div>
+        
+        <div class="subcategories">
+            {{#each category.subcategories as |subcategory|}}
+                {{sub-category-item category=subcategory listType=listType}}
+            {{/each}}
+        </div>
+        
+        <div class="topics">
+        {{#unless isMuted}}
+            {{#if showTopics}}
+                {{#each category.featuredTopics as |t|}}
+                    {{featured-topic topic=t latestTopicOnly=latestTopicOnly}}
+                {{/each}}
+            {{/if}}
+        {{/unless}}
+        </div>
+  
+    </div>
+  
+{{/unless}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="components/categories-only">
+{{#if categories}}
+  {{#if filteredCategories}}
+    <div class="category-list tyytjtyj {{if showTopics "with-topics"}}">
+        {{#each categories as |category|}}
+          {{parent-category-row category=category showTopics=showTopics}}
+        {{/each}}
+    </div>
+  {{/if}}
+
+  {{#if mutedCategories}}
+    <div class="muted-categories">
+      <a href class="muted-categories-link" {{action "toggleShowMuted"}}>
+        <h3 class="muted-categories-heading">{{i18n "categories.muted"}}</h3>
+        {{#if mutedToggleIcon}}
+          {{d-icon mutedToggleIcon}}
+        {{/if}}
+      </a>
+      <div class="category-list {{if showTopics "with-topics"}} {{unless showMutedCategories "hidden"}}">
+          {{#each categories as |category|}}
+            {{parent-category-row category=category showTopics=showTopics listType="muted"}}
+          {{/each}}
+      </div>
+    </div>
+  {{/if}}
+{{/if}}
+
+{{plugin-outlet name="below-categories-only" tagName="" args=(hash categories=categories showTopics=showTopics)}}
+</script>
+
+
+<script type="text/x-handlebars" data-template-name="components/topic-post-badges">
+{{#if unread }}
+<a href={{url}} title={{i18n "topic.unread_posts" count=unread}} class="badge badge-notification unread">{{unread}}</a>
+{{/if}}
+{{#if newPosts}}
+<a href={{url}} title={{i18n "topic.total_unread_posts" count=newPosts}} class="badge badge-notification new-posts">{{newPosts}}</a>
+{{/if}}
+{{#if unseen}}
+<a href={{url}} title={{i18n "topic.new"}} class="badge badge-notification new-topic">new</a>
+{{/if}}
+</script>

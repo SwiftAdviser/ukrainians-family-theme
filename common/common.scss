@@ -1,0 +1,39 @@
+.hljs {
+  padding: 16px;
+  border-radius: 2px;
+  background-color: #3c3c40;
+  color: #ccc;
+  font-size: 12px;
+
+  .hljs-subst {
+    color: #ccc;
+  }
+
+  .hljs-keyword,
+  .hljs-literal,
+  .hljs-built_in {
+    color: #71beff;
+    font-weight: normal;
+  }
+
+  .hljs-string {
+    color: #da7c3a;
+  }
+
+  .hljs-title {
+    color: #41d0a8;
+    font-weight: normal;
+  }
+
+  .hljs-number {
+    color: #b2dc93;
+  }
+
+  .hljs-comment,
+  .hljs-doctag {
+    font-style: normal;
+    color: #52b713;
+  }
+
+  max-height: none;
+}

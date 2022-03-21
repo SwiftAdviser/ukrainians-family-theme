@@ -1,0 +1,8 @@
+.container {
+  &.show-badge {
+    background-color: var(--secondary);
+    border-radius: $radius;
+    @include box-shadow;
+    padding: $padding;
+  }
+}

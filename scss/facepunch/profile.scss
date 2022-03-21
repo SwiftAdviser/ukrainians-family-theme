@@ -1,0 +1,141 @@
+body.user-summary-page {
+  // Viewing your own profile
+  .viewing-self {
+    .user-main {
+      .about {
+        &.has-background {
+          .details {
+            border-radius: $radius;
+
+            .primary {
+              position: relative;
+              padding: 0;
+              top: auto;
+              left: auto;
+              right: auto;
+              .primary-textual {
+                color: var(--primary);
+                color: var(--primary);
+                .username,
+                .full-name {
+                  color: var(--primary);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .user-main {
+    border-radius: $radius;
+    position: relative;
+
+    .about {
+      &.has-background {
+        .user-profile-image {
+          border-top-left-radius: $radius;
+          border-top-right-radius: $radius;
+          position: relative;
+
+          &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: $radius;
+            border-top-right-radius: $radius;
+            content: " ";
+            background: linear-gradient(
+              90deg,
+              rgba($darkblue, 0.9) 20%,
+              rgba($darkblue, 0.5) 60%,
+              rgba($darkblue, 0.7) 100%
+            );
+            z-index: 1;
+          }
+        }
+        .details {
+          padding: $padding;
+        }
+        .staff-counters {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          border-top-left-radius: $radius;
+          border-top-right-radius: $radius;
+          z-index: 2;
+        }
+
+        .details {
+          .primary {
+            box-sizing: border-box;
+            position: absolute;
+            top: $padding;
+            right: 0;
+            left: 0;
+            padding: $padding;
+            z-index: 2;
+
+            .primary-textual {
+              color: var(--secondary);
+              .username {
+                color: var(--secondary);
+              }
+              .full-name {
+                color: var(--secondary);
+              }
+            }
+          }
+          .secondary {
+            border-top: 0;
+            margin-top: 0;
+          }
+        }
+      }
+      &.no-background {
+        .details {
+          padding: $padding;
+          border-radius: $radius;
+        }
+      }
+      .details {
+        border-bottom-left-radius: $radius;
+        border-bottom-right-radius: $radius;
+        @include box-shadow;
+      }
+    }
+
+    .user-content-wrapper {
+      background-color: var(--secondary);
+      border-radius: $radius;
+      box-sizing: border-box;
+      @include box-shadow;
+      padding: $padding;
+    }
+  }
+}
+
+// Messages
+body.archetype-private_message {
+  #main-outlet {
+    max-width: 760px;
+    position: relative;
+    left: -45px;
+  }
+  #topic-title {
+    background-color: $offwhite;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin: 0 3px 0 1px;
+  }
+  .post-stream {
+    .topic-list {
+      border-left: 0;
+    }
+  }
+}
