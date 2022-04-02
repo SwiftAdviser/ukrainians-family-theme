@@ -540,7 +540,7 @@ a:hover {
   background-color: #fcd066 !important;
 }
 
-.topic-footer-main-buttons .create {
+.topic-footer-main-buttons .create, .topic-footer-main-buttons .btn-primary {
   display: block;
   width: 100%;
   padding: 15pt;
@@ -548,6 +548,8 @@ a:hover {
   font-size: 16pt;
   margin-right: 0 !important;
 }
+
+
 
 .topic-post-badges {
   display: none
