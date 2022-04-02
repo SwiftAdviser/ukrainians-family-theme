@@ -549,15 +549,18 @@ a:hover {
   margin-right: 0 !important;
 }
 
-.btn-primary {
+.topic-footer-buttons .btn-primary {
   display: block;
   width: 100%;
-  padding: 15pt;
+  padding: 15pt !important;
   background: #0bb4ff;
-  font-size: 16pt;
+  font-size: 16pt !important;
   margin-right: 0 !important;
 }
 
+.suggested-topics-wrapper {
+  margin-top: 50pt;
+}
 
 
 .topic-post-badges {
