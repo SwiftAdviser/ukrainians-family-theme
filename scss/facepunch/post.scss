@@ -151,6 +151,7 @@
   border-radius: $radius-half;
   margin-bottom: 0.5rem;
   padding: 0;
+  max-width: 100% !important;
 
   .small-action-desc {
     color: var(--primary-low-mid);
