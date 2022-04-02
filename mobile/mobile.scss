@@ -138,7 +138,7 @@ a:hover {
 }
 
 .category .category-head .category-title-link .category-name {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   font-family: var(--heading-font-family);
   color: white
@@ -533,7 +533,11 @@ a:hover {
 .list-controls .navigation-container .navigation-toggle a, .list-controls .btn {
   background-color: white;
   border: none;
-  font-size: 12px
+  font-size: 16px;
+}
+
+.list-controls .btn #create-topic {
+  background-color: #fcd066;
 }
 
 .topic-post-badges {
