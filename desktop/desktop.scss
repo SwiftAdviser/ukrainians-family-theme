@@ -19,6 +19,9 @@
 @media screen and (min-width: 925px) {
   .archetype-regular {
     #topic-footer-buttons {
+
+      max-width: 100% !important;
+
       #topic-footer-button-share-and-invite,
       .topic-notifications-button {
         display: none;
