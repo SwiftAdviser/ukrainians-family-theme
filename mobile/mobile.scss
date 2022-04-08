@@ -257,7 +257,11 @@ a:hover {
 .topic-list tbody tr:not(.topic-list-item-separator) td {
   display: flex;
   align-items: center;
-  max-width: none
+  max-width: none;
+  background: rgb(181 204 246 / 49%);
+  margin-top: 3pt;
+  border-radius: 5pt;
+  padding: 0 !important;
 }
 
 .topic-list tbody tr:not(.topic-list-item-separator) td .right {
@@ -589,9 +593,9 @@ a:hover {
 }
 
 .suggested-topics-title {
-  color: var(--blend-primary-secondary-5);
+  color: #000;
 }
 
 .reason .text {
-  color: var(--google);
+  color: #000;
 }
