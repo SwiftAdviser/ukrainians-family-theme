@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 html,
 body 
@@ -9,12 +9,14 @@ body
 
 body 
 {
-  background-image: url($bg);
+  background-image: url($bg_effect);
+  background-position: center;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
+  background-color: #F6F6F6;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #182F43;
 
   &:before {
     content: " ";

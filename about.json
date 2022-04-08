@@ -1,15 +1,16 @@
 {
-  "name": "Facepunch Theme",
+  "name": "Ukrainians Family",
   "component": false,
   "license_url": null,
   "about_url": null,
-  "authors": null,
+  "authors": "t.me/SwiftAdviser",
   "theme_version": null,
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
     "bg": "assets/bg.jpg",
     "bg_dark": "assets/bg_dark.webp",
+    "bg_effect": "assets/bg_effect.webp",
     "bg_cat_orange": "assets/categories/orange.webp",
     "bg_cat_blue": "assets/categories/blue.webp",
     "bg_cat_red": "assets/categories/red.webp",

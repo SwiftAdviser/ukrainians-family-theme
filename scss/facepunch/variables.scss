@@ -27,13 +27,11 @@ $widescreen-enabled: true !default;
 $fullhd: 1344px + (2 * $gap) !default;
 $fullhd-enabled: true !default;
 
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
 
 :root {
-  --font-family: "Roboto", Helvetica, Arial, sans-serif;
-  --heading-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  --font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  --heading-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   --success: #03a9f4;
   --highlight-medium: #1194f033;
 }
