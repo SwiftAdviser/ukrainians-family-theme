@@ -118,7 +118,13 @@ a:hover {
 }
 
 .category {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+
+
+  // Hide uncategorized
+  &[data-category-id="3"] {
+    display: none;
+  }
 }
 
 .category .category-head {
