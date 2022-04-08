@@ -11,11 +11,6 @@
     "bg": "assets/bg.jpg",
     "bg_dark": "assets/bg_dark.webp",
     "bg_effect": "assets/bg_effect.webp",
-    "bg_cat_orange": "assets/categories/orange.webp",
-    "bg_cat_blue": "assets/categories/blue.webp",
-    "bg_cat_red": "assets/categories/red.webp",
-    "bg_cat_brown": "assets/categories/brown.webp",
-    "bg_cat_green": "assets/categories/green.webp"
   },
   "color_schemes": {
     "Facepunch_Default": {
