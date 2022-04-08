@@ -34,33 +34,7 @@ body {
       }
     }
 
-    // GameDev
-    &.category-sb {
-      .category-heading {
-        background-image: url($bg_cat_blue);
-      }
-    }
 
-    // Information
-    &.category-rust {
-      .category-heading {
-        background-image: url($bg_cat_orange);
-      }
-    }
-
-    // Applications
-    &.category-gmod {
-      .category-heading {
-        background-image: url($bg_cat_red);
-      }
-    }
-
-    // Moderation
-    &.category-meta {
-      .category-heading {
-        background-image: url($bg_cat_brown);
-      }
-    }
 
     // Category Header (With Logo).
     .category-heading {

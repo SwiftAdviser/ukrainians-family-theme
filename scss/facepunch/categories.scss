@@ -22,9 +22,6 @@
 
     .category-head {
       background-color: $darkblue;
-      background-size: cover;
-      background-position: center;
-      background-image: url($bg_cat_blue);
       box-sizing: border-box;
       display: flex;
       margin: 0;
@@ -184,7 +181,7 @@
     // Set Styling for Sandbox Category (Set to 7)
     &[data-category-id="7"] {
       .category-head {
-        background-image: url($bg_cat_blue);
+        //background-image: url($bg_cat_blue);
       }
       .subcategories,
       .topics {
