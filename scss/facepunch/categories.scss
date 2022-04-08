@@ -124,6 +124,12 @@
       display: none;
     }
 
+    // Moderation
+    &[data-category-id="6"] {
+      .category-head {
+        //background-image: url($bg_cat_red);
+      }
+
       .subcategories,
       .topics {
         .badge.badge-notification {
@@ -131,6 +137,12 @@
         }
       }
     }
+
+    // Applications
+    &[data-category-id="10"] {
+      .category-head {
+        //background-image: url($bg_cat_green);
+      }
 
       .subcategories,
       .topics {
@@ -143,7 +155,7 @@
     // Information
     &[data-category-id="5"] {
       .category-head {
-        background-image: url($bg_cat_brown);
+        //background-image: url($bg_cat_brown);
         .category-description {
         //  color: #c0e5ff !important;
         }
