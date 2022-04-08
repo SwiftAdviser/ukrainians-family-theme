@@ -140,7 +140,7 @@ a:hover {
 }
 
 .category .category-head .category-title-link .category-name {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   font-family: var(--heading-font-family);
   color: #000;
@@ -197,13 +197,13 @@ a:hover {
 
 .category .topics .featured-topic a {
   padding: 5px 8px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #000;
   flex-shrink: 0
 }
 
 .category .topics .featured-topic a.title {
   flex-grow: 1;
-  font-size: 12px;
+  font-size: 16px;
   white-space: nowrap;
   color: #000;
 }
@@ -515,7 +515,7 @@ a:hover {
   margin: 10px 0;
   padding: 5px 10px;
   background-color: #03a9f4;
-  color: rgba(255, 255, 255, 0.5)
+  color: #000
 }
 
 .alert.alert-info a {
