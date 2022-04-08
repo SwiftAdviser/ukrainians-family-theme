@@ -20,12 +20,12 @@ body
 
   &:before {
     content: " ";
-    background: linear-gradient(
-      45deg,
-      rgba(#59d1d5, 0.05) 20%,
-      rgba(#3c9a9d, 0.05) 60%,
-      rgba(#3f948d, 0.1) 100%
-    );
+    //background: linear-gradient(
+    //  45deg,
+    //  rgba(#59d1d5, 0.05) 20%,
+    //  rgba(#3c9a9d, 0.05) 60%,
+    //  rgba(#3f948d, 0.1) 100%
+    //);
     position: fixed;
     left: 0;
     top: 0;

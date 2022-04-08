@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 .hljs {
   padding: 16px;
@@ -54,8 +54,8 @@
 }
 
 :root {
-  --font-family: "Roboto", Helvetica, Arial, sans-serif;
-  --heading-font-family: "Roboto", Helvetica, Arial, sans-serif;
+  --font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  --heading-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   --success: #03a9f4;
   --highlight-medium: #1194f033
 }
@@ -66,17 +66,19 @@ html, body {
 }
 
 body {
-  background-image: url($bg);
+  background-image: url($bg_effect);
+  background-position: center;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative
+  background-color: #F6F6F6;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #182F43;
 }
 
 body:before {
   content: " ";
-  background-color: #2e4170d2;
+  //background-color: #2e4170d2;
   position: fixed;
   left: 0;
   top: 0;
