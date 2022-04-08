@@ -10,7 +10,7 @@
   "assets": {
     "bg": "assets/bg.jpg",
     "bg_dark": "assets/bg_dark.webp",
-    "bg_effect": "assets/bg_effect.webp",
+    "bg_effect": "assets/bg_effect.webp"
   },
   "color_schemes": {
     "Facepunch_Default": {
