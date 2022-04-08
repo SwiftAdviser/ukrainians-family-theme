@@ -143,7 +143,7 @@ a:hover {
   font-size: 24px;
   font-weight: bold;
   font-family: var(--heading-font-family);
-  color: white
+  color: #000;
 }
 
 .category .category-head .category-title-link .category-description {
@@ -152,7 +152,7 @@ a:hover {
 
 .category .category-head .stats {
   display: flex;
-  color: white;
+  color: #000;
   font-size: 11px
 }
 
@@ -179,7 +179,7 @@ a:hover {
   font-weight: 600
 }
 .badge-category .clear-badge {
-  color: #fff;
+  color: #000;
 }
 .category .topics {
   display: flex;
@@ -205,11 +205,11 @@ a:hover {
   flex-grow: 1;
   font-size: 12px;
   white-space: nowrap;
-  color: rgba(255, 255, 255, 0.8)
+  color: #000;
 }
 
 .category .topics .featured-topic a.badge.badge-notification.new-topic {
-  color: white
+  color: #000
 }
 
 .category .topics .featured-topic a.badge.badge-notification.new-topic::before {
@@ -220,7 +220,7 @@ a:hover {
   display: flex;
   align-items: center;
   padding: 10px;
-  color: white
+  color: #000
 }
 
 .category-heading .category-logo.aspect-image {
@@ -246,8 +246,8 @@ a:hover {
 
 .topic-list tbody tr:not(.topic-list-item-separator) {
   border: none;
-  background-color: rgba(255, 255, 255, 0.2);
-  --primary-medium: white
+  background-color: rgba(255, 255, 255, 0.1);
+  --primary-medium: #000
 }
 
 .topic-list tbody tr:not(.topic-list-item-separator).visited {
@@ -273,7 +273,7 @@ a:hover {
 }
 
 .topic-list tbody tr:not(.topic-list-item-separator) td .right .main-link a {
-  color: white;
+  color: #000;
   padding: 10px;
   display: flex
 }
@@ -300,7 +300,7 @@ a:hover {
 .topic-list tbody tr:not(.topic-list-item-separator) td .right .topic-item-stats .discourse-tags .discourse-tag {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.7;
-  color: white
+  color: #000;
 }
 
 .topic-list tbody tr:not(.topic-list-item-separator) td .pull-left {
@@ -519,7 +519,7 @@ a:hover {
 }
 
 .alert.alert-info a {
-  color: white;
+  color: #000;
   text-decoration: underline
 }
 
@@ -529,7 +529,7 @@ a:hover {
 }
 
 .alert.alert-info .close .d-icon {
-  color: white
+  color: #000;
 }
 
 .list-controls .navigation-container .navigation-toggle a, .list-controls .btn {
